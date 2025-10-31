@@ -1,4 +1,3 @@
-# app.py (iniciante + proporções por área e recorte por raça)
 import streamlit as st
 import pandas as pd
 import plotly.express as px
@@ -209,3 +208,4 @@ st.markdown("---")
 # 17) Mostrar dados originais filtrados (opcional)
 with st.expander("Ver registros filtrados (linhas)"):
     st.dataframe(df_filtered.drop(columns=["count","curso_upper","sexo_norm","raca_norm"], errors="ignore").reset_index(drop=True))
+
